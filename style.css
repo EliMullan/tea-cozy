@@ -1,43 +1,68 @@
 *  {
   box-sizing: border-box;
+  
 }
+
 body {
-    font-size: 22px;
-    color: seashell;
+    font-size: 22px;    
     background-color: black;
     opacity: 0.9;
     text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    color: seashell;
 }
 
 header {
     position: fixed;
+    top:0;
+    right:0;
+    left:0;
     height: 69px;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    justify-content: space-between;
 }
 
-header img {
-  padding-left: 10px;
+header div img{
   height: 50px;
+  margin: 5px;
 }
 
 header nav ul {
-    float: right;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
 }
 
-header nav ul li {
+header nav ul li a {
+    display: block;
+    text-align:center;
+    padding: 16px;
     text-decoration: underline;
+    color: seashell;
 }
 
-.intro { 
+main {
+    margin-top: 70px;
+}
+
+.section { 
+    display: flex;
     background-image: url('media\images\img-mission-background.webp');
     background-size: cover;
     height: 700px;
     width: 80%;
 }
 
-.intro div {
+.section div {
     background-color: black;
     text-align: center;
     width: 1200px;
+    height: 40px;
 }
 
 .flex-gallery {

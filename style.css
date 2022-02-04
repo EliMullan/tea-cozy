@@ -12,6 +12,10 @@ body {
     color: seashell;
 }
 
+h2 {
+    margin-bottom: 0;
+}
+
 header {
     position: fixed;
     top:0;
@@ -43,35 +47,45 @@ header nav ul li a {
     text-align:center;
     padding: 16px;
     text-decoration: underline;
-    color: seashell;
+    
 }
 
 main {
     margin-top: 70px;
 }
 
-.section { 
+section { 
     display: flex;
-    background-image: url('media\images\img-mission-background.webp');
+    align-items: center;
+    background-color: grey;
     background-size: cover;
     height: 700px;
-    width: 80%;
+    width: 1200px;
+    margin: auto;
 }
 
-.section div {
+section div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     background-color: black;
     text-align: center;
     width: 1200px;
-    height: 40px;
+    height: 120px;
+           
 }
 
-.flex-gallery {
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
 }
 
-.flex-gallery figure {
+.gallery figure {
     justify-content: space-around;
     align-content: center;
     align-items: center;
@@ -79,29 +93,40 @@ main {
     width: 300px;
 }
 
-.flex-location {
+.location {
     display: flex;
-    flex-wrap: nowrap;
-    width: 100px;
-    height: 500px;
-    background-image: url('media\images\img-locations-background.webp');
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:grey;
+    margin: auto;
+    height: 600px;
 }
 
-.flex-location div {
+.location h2 {
+    margin-bottom: 15px;
+}
+
+.address {
+    display: inline-flex;
+    margin: auto;
+    margin: 0;
+}
+
+.address div {
     background-color: black;
     width: 300px;
+    height: 300px;
     opacity: 1;
     margin: 15px 20px;
-    justify-content: space-around;
-    align-items:center;
-    align-content: center;
+    
 }
 
 footer div {
     height: 200px;
 }
 
-footer h5 {
+footer h5:last-child {
     text-align:left;
 }
 
